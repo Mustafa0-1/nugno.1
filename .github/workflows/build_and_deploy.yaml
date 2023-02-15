@@ -21,6 +21,5 @@ jobs:
         with:
           context: .
           target: prod_image
-          file: /Users/mustafanysan/Pictures/skypro/Originals/pythonProject/nugno/.github/workflows
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/nugno:latest
