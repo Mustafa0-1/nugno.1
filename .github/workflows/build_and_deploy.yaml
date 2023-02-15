@@ -5,6 +5,8 @@ on:
     branch:
       - 'main'
       - 'dev_34'
+
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -19,6 +21,6 @@ jobs:
         with:
           context: .
           target: prod_image
-          file: ./Dockerfile
+          file: /Users/mustafanysan/Pictures/skypro/Originals/pythonProject/nugno
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/nugno:latest
