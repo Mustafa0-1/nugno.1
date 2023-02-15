@@ -16,7 +16,7 @@ RUN poetry export --without dev -f requirements.txt -o /tmp/requirements.prod.tx
 
 WORKDIR /opt
 
-COPY ../../../../../Desktop/nugno.1 .
+COPY . .
 
 EXPOSE 8000
 
